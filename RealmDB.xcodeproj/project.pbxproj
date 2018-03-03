@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A59A21DA204B258E008A4DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A21D9204B258E008A4DFA /* AppDelegate.swift */; };
-		A59A21DC204B258E008A4DFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A21DB204B258E008A4DFA /* ViewController.swift */; };
 		A59A21DF204B258E008A4DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59A21DD204B258E008A4DFA /* Main.storyboard */; };
-		A59A21E2204B258E008A4DFA /* RealmDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A59A21E0204B258E008A4DFA /* RealmDB.xcdatamodeld */; };
 		A59A21E4204B258E008A4DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59A21E3204B258E008A4DFA /* Assets.xcassets */; };
 		A59A21E7204B258E008A4DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59A21E5204B258E008A4DFA /* LaunchScreen.storyboard */; };
+		A59A21F3204B25E0008A4DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A21F2204B25E0008A4DFA /* AppDelegate.swift */; };
+		A59A21F5204B25F5008A4DFA /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A21F4204B25F5008A4DFA /* TodoListViewController.swift */; };
+		A59A21F7204B2626008A4DFA /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A21F6204B2626008A4DFA /* CategoryTableViewController.swift */; };
+		A59A21FA204B2638008A4DFA /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A59A21F8204B2638008A4DFA /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A59A21D6204B258E008A4DFA /* RealmDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A59A21D9204B258E008A4DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A59A21DB204B258E008A4DFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A59A21DE204B258E008A4DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A59A21E1204B258E008A4DFA /* RealmDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RealmDB.xcdatamodel; sourceTree = "<group>"; };
 		A59A21E3204B258E008A4DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A59A21E6204B258E008A4DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A59A21E8204B258E008A4DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59A21F2204B25E0008A4DFA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A59A21F4204B25F5008A4DFA /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		A59A21F6204B2626008A4DFA /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		A59A21F9204B2638008A4DFA /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		A59A21D8204B258E008A4DFA /* RealmDB */ = {
 			isa = PBXGroup;
 			children = (
-				A59A21D9204B258E008A4DFA /* AppDelegate.swift */,
-				A59A21DB204B258E008A4DFA /* ViewController.swift */,
-				A59A21DD204B258E008A4DFA /* Main.storyboard */,
-				A59A21E3204B258E008A4DFA /* Assets.xcassets */,
-				A59A21E5204B258E008A4DFA /* LaunchScreen.storyboard */,
+				A59A21EE204B25A5008A4DFA /* Data Model */,
+				A59A21EF204B25B3008A4DFA /* Views */,
+				A59A21F0204B25BE008A4DFA /* Controllers */,
+				A59A21F1204B25C7008A4DFA /* Supporting files */,
 				A59A21E8204B258E008A4DFA /* Info.plist */,
-				A59A21E0204B258E008A4DFA /* RealmDB.xcdatamodeld */,
 			);
 			path = RealmDB;
+			sourceTree = "<group>";
+		};
+		A59A21EE204B25A5008A4DFA /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				A59A21F8204B2638008A4DFA /* DataModel.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		A59A21EF204B25B3008A4DFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A59A21DD204B258E008A4DFA /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A59A21F0204B25BE008A4DFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A59A21F6204B2626008A4DFA /* CategoryTableViewController.swift */,
+				A59A21F4204B25F5008A4DFA /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A59A21F1204B25C7008A4DFA /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				A59A21F2204B25E0008A4DFA /* AppDelegate.swift */,
+				A59A21E3204B258E008A4DFA /* Assets.xcassets */,
+				A59A21E5204B258E008A4DFA /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59A21DC204B258E008A4DFA /* ViewController.swift in Sources */,
-				A59A21E2204B258E008A4DFA /* RealmDB.xcdatamodeld in Sources */,
-				A59A21DA204B258E008A4DFA /* AppDelegate.swift in Sources */,
+				A59A21F5204B25F5008A4DFA /* TodoListViewController.swift in Sources */,
+				A59A21FA204B2638008A4DFA /* DataModel.xcdatamodeld in Sources */,
+				A59A21F3204B25E0008A4DFA /* AppDelegate.swift in Sources */,
+				A59A21F7204B2626008A4DFA /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,13 +364,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A59A21E0204B258E008A4DFA /* RealmDB.xcdatamodeld */ = {
+		A59A21F8204B2638008A4DFA /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A59A21E1204B258E008A4DFA /* RealmDB.xcdatamodel */,
+				A59A21F9204B2638008A4DFA /* DataModel.xcdatamodel */,
 			);
-			currentVersion = A59A21E1204B258E008A4DFA /* RealmDB.xcdatamodel */;
-			path = RealmDB.xcdatamodeld;
+			currentVersion = A59A21F9204B2638008A4DFA /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
